@@ -1,0 +1,15 @@
+{
+	"id": "wallpaperShufflerPlugin",
+	"type": "widget",
+	"name": "Wallpaper Shuffler",
+	"description": "Shuffles wallpapers inside a folder",
+	"version": "1.0.2",
+	"author": "Daniel-42-z",
+	"icon": "wallpaper",
+	"component": "./WallpaperShufflerWidget.qml",
+	"settings": "./WallpaperShufflerSettings.qml",
+	"permissions": [
+		"settings_read",
+		"settings_write"
+	]
+}
