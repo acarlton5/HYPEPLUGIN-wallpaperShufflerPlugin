@@ -489,7 +489,7 @@ PluginComponent {
                 current_wallpaper=$(sed -n "${current_index}p" "$SHUFFLE_FILE")
                 if [ -n "$current_wallpaper" ] && [ -f "$current_wallpaper" ]; then
                     echo "Restoring wallpaper: $current_wallpaper" >&2
-                    dms ipc call wallpaper set "$current_wallpaper"
+                    hype ipc call wallpaper set "$current_wallpaper"
                 else
                     echo "No valid wallpaper to restore" >&2
                 fi

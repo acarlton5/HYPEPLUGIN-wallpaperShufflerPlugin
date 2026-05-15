@@ -78,7 +78,7 @@ echo "$new_index" >"$CURRENT_INDEX_FILE"
 
 # Set the wallpaper
 if [ -n "$wallpaper" ] && [ -f "$wallpaper" ]; then
-	dms ipc call wallpaper set "$wallpaper"
+	hype ipc call wallpaper set "$wallpaper"
 else
 	echo "Error: wallpaper file not found: $wallpaper" >&2
 	exit 1
